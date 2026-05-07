@@ -16,6 +16,29 @@
         <li>git init => intialize the local git repository</li>
         <li>git add filename => stage the file contents for the next commit. here stage represents the choosing the file contents for the next commit. </li>
         <li>git commit -m "message for a file commit"</li>
+
+        <h1>Branching</h1>
+        <p>Branching in git is safer way to code, if we want to implement the new feature to the main code. so that, the new feature 
+            can be get into the new feature without affecting the main code.
+        </p>
+        <li>git branch => shows the current branch</li>
+        <li>git branch "branch_name" => create the new branch</li>
+        <li>git branch -m "branch_name_tochange" => rename the branch</li>
+        <li>git branch -M "branch_name_tochang" => rename the branch forcefully, like it will overwrite the old branch</li><br>
+        <h3 style="display: inline">Merging branch</h3>
+        <p>This is where , the real use of branching came into picture. </p>
+        <p>we can add the new features in project, without affecting the main code safely and separately. </p>        
+        <li>git switch "branch_name" => switching the brach to another branch for code separately</li>
+        <p>In a separate feature branch, we can add some features in the branch</p>
+        <p>After adding, come back to main branch and merge the feature branch</p>
+        <li>git merge "branch_name" </li>
+        <h3 style="display: inline;">Merge conflict</h3>
+        <p>When code in new_feature branch has equal lines of code with different codes, the merge conflict occurs </p>
+        <p>In other words,A merge conflict occurs when the same line or same section of code is changed differently in multiple branches.</p>
+        <p>In that time,  in our code file head ======== feature. here head-> says main branch code, === separator, feature says new_branch code </p>
+        <p>So, here we have to manually select the which code we want or combinely by editing the file.</p>
+        <p>After doing this, merge conflict resolved successfully by staging and commit.</p>
+        <li></li>
     </ol>
 </body>
 </html>
